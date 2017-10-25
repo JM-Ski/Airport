@@ -1,0 +1,129 @@
+\hypertarget{class_material}{}\section{Material Class Reference}
+\label{class_material}\index{Material@{Material}}
+
+
+This class is used to create a material.  
+
+
+
+
+{\ttfamily \#include $<$material.\+h$>$}
+
+
+
+Collaboration diagram for Material\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{class_material__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_material_a137e987401b63eb7c6c27c3e38bc74b5}{Material} ()
+\item 
+\hyperlink{class_material_a37d1580c7ab5e7e31e7210a374d82364}{Material} (sf\+::\+Vector3f ambient, float f\+AmbientW, sf\+::\+Vector3f diffuse, float f\+DiffuseW, sf\+::\+Vector3f specular, float f\+SpecularW, float f\+Shininess)
+\item 
+void \hyperlink{class_material_aae516fe81f34adfead3ff7ae0cc9c92e}{initialize} (G\+Lenum model\+IN)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G\+Lfloat \hyperlink{class_material_a2b228dd08317eb9a6f794db264b0a86c}{material\+Ambient} \mbox{[}4\mbox{]}
+\item 
+G\+Lfloat \hyperlink{class_material_a72c13fb8c76910a05fe13257d96391e6}{material\+Diffuse} \mbox{[}4\mbox{]}
+\item 
+G\+Lfloat \hyperlink{class_material_ad3daaf8271e92ef553f08edf0878f725}{material\+Specular} \mbox{[}4\mbox{]}
+\item 
+G\+Lfloat \hyperlink{class_material_aeb155ecd278b3ea891077ff8aea8cd93}{material\+Shininess}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to create a material. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Material@{Material}!Material@{Material}}
+\index{Material@{Material}!Material@{Material}}
+\subsubsection[{\texorpdfstring{Material()}{Material()}}]{\setlength{\rightskip}{0pt plus 5cm}Material\+::\+Material (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_material_a137e987401b63eb7c6c27c3e38bc74b5}{}\label{class_material_a137e987401b63eb7c6c27c3e38bc74b5}
+Constructor. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_material_a137e987401b63eb7c6c27c3e38bc74b5_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Material@{Material}!Material@{Material}}
+\index{Material@{Material}!Material@{Material}}
+\subsubsection[{\texorpdfstring{Material(sf\+::\+Vector3f ambient, float f\+Ambient\+W, sf\+::\+Vector3f diffuse, float f\+Diffuse\+W, sf\+::\+Vector3f specular, float f\+Specular\+W, float f\+Shininess)}{Material(sf::Vector3f ambient, float fAmbientW, sf::Vector3f diffuse, float fDiffuseW, sf::Vector3f specular, float fSpecularW, float fShininess)}}]{\setlength{\rightskip}{0pt plus 5cm}Material\+::\+Material (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Vector3f}]{ambient, }
+\item[{float}]{f\+AmbientW, }
+\item[{sf\+::\+Vector3f}]{diffuse, }
+\item[{float}]{f\+DiffuseW, }
+\item[{sf\+::\+Vector3f}]{specular, }
+\item[{float}]{f\+SpecularW, }
+\item[{float}]{f\+Shininess}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_a37d1580c7ab5e7e31e7210a374d82364}{}\label{class_material_a37d1580c7ab5e7e31e7210a374d82364}
+\hyperlink{class_material}{Material} initializer. 
+\begin{DoxyParams}{Parameters}
+{\em ambient} & = Ambient effect. \\
+\hline
+{\em f\+AmbientW} & = Leave this at 1.\+f!!!. \\
+\hline
+{\em diffuse} & = Diffuse effect. \\
+\hline
+{\em f\+DiffuseW} & = Leave this at 1.\+f!!!. \\
+\hline
+{\em specular} & = Specular effect. \\
+\hline
+{\em f\+SpecularW} & = Leave this at 1.\+f!!!. \\
+\hline
+{\em f\+Shininess} & = Shniy effect. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Material@{Material}!initialize@{initialize}}
+\index{initialize@{initialize}!Material@{Material}}
+\subsubsection[{\texorpdfstring{initialize(\+G\+Lenum model\+I\+N)}{initialize(GLenum modelIN)}}]{\setlength{\rightskip}{0pt plus 5cm}void Material\+::initialize (
+\begin{DoxyParamCaption}
+\item[{G\+Lenum}]{model\+IN}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_aae516fe81f34adfead3ff7ae0cc9c92e}{}\label{class_material_aae516fe81f34adfead3ff7ae0cc9c92e}
+Activates the material for the particular model. 
+\begin{DoxyParams}{Parameters}
+{\em model\+IN} & = Specific model. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Material@{Material}!material\+Ambient@{material\+Ambient}}
+\index{material\+Ambient@{material\+Ambient}!Material@{Material}}
+\subsubsection[{\texorpdfstring{material\+Ambient}{materialAmbient}}]{\setlength{\rightskip}{0pt plus 5cm}G\+Lfloat Material\+::material\+Ambient\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_material_a2b228dd08317eb9a6f794db264b0a86c}{}\label{class_material_a2b228dd08317eb9a6f794db264b0a86c}
+\hyperlink{class_material}{Material} ambient effect. \index{Material@{Material}!material\+Diffuse@{material\+Diffuse}}
+\index{material\+Diffuse@{material\+Diffuse}!Material@{Material}}
+\subsubsection[{\texorpdfstring{material\+Diffuse}{materialDiffuse}}]{\setlength{\rightskip}{0pt plus 5cm}G\+Lfloat Material\+::material\+Diffuse\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_material_a72c13fb8c76910a05fe13257d96391e6}{}\label{class_material_a72c13fb8c76910a05fe13257d96391e6}
+\hyperlink{class_material}{Material} diffuse effect. \index{Material@{Material}!material\+Shininess@{material\+Shininess}}
+\index{material\+Shininess@{material\+Shininess}!Material@{Material}}
+\subsubsection[{\texorpdfstring{material\+Shininess}{materialShininess}}]{\setlength{\rightskip}{0pt plus 5cm}G\+Lfloat Material\+::material\+Shininess\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_material_aeb155ecd278b3ea891077ff8aea8cd93}{}\label{class_material_aeb155ecd278b3ea891077ff8aea8cd93}
+\hyperlink{class_material}{Material} shininess effect. \index{Material@{Material}!material\+Specular@{material\+Specular}}
+\index{material\+Specular@{material\+Specular}!Material@{Material}}
+\subsubsection[{\texorpdfstring{material\+Specular}{materialSpecular}}]{\setlength{\rightskip}{0pt plus 5cm}G\+Lfloat Material\+::material\+Specular\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_material_ad3daaf8271e92ef553f08edf0878f725}{}\label{class_material_ad3daaf8271e92ef553f08edf0878f725}
+\hyperlink{class_material}{Material} specular effect. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Airport/include/\hyperlink{material_8h}{material.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,190 @@
+\hypertarget{class_scene}{}\section{Scene Class Reference}
+\label{class_scene}\index{Scene@{Scene}}
+
+
+This class is used to render a scene.  
+
+
+
+
+{\ttfamily \#include $<$scene.\+h$>$}
+
+
+
+Collaboration diagram for Scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_scene_ad10176d75a9cc0da56626f682d083507}{Scene} ()
+\item 
+void \hyperlink{class_scene_a2984c9b32deff64e52a5c49744d90721}{update} (float f\+Elapsed\+Time, sf\+::\+Vector2i i\+Mouse\+Position)
+\item 
+void \hyperlink{class_scene_ac0e3d2c98ba6063a086467fb2c19142f}{draw} ()
+\item 
+void \hyperlink{class_scene_ab489a784acb0f14e1649f3970ea49195}{process\+Event} (sf\+::\+Event \&e, sf\+::\+Window \&window)
+\item 
+void \hyperlink{class_scene_aaffb708da35121468f9a66c626881052}{set\+Screen\+Size} (int \hyperlink{class_scene_a778137dcab836e6be4217615873db576}{i\+Screen\+Width}, int \hyperlink{class_scene_aac44019cbb3024de33132b0f278708f9}{i\+Screen\+Height})
+\item 
+void \hyperlink{class_scene_ac6c60d8e20f167e468e4bf5dc17ca68e}{read\+Model\+Data} (\hyperlink{class_model_extractor}{Model\+Extractor} $\ast$reader, std\+::vector$<$ \hyperlink{class_model}{Model} $>$ \&models)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_scene_a778137dcab836e6be4217615873db576}{i\+Screen\+Width}
+\item 
+int \hyperlink{class_scene_aac44019cbb3024de33132b0f278708f9}{i\+Screen\+Height}
+\item 
+\hyperlink{class_camera}{Camera} \hyperlink{class_scene_a1b706ed302145fe191131cefe8873fec}{m\+\_\+camera}
+\item 
+\hyperlink{class_model}{Model} \hyperlink{class_scene_a8398e5ee10d0a39903a26d665f3f3a9f}{m\+\_\+model}
+\item 
+\hyperlink{class_lighting}{Lighting} \hyperlink{class_scene_af2eaac7f7e7997e0b2a47373f55cb2e1}{m\+\_\+light}
+\item 
+\hyperlink{class_material}{Material} \hyperlink{class_scene_a80eed5a8d1800f3b426bca2eda26d4b6}{m\+\_\+material}
+\item 
+\hyperlink{class_model_extractor}{Model\+Extractor} \hyperlink{class_scene_aadd2050cd69c19889b146c6334feb8dd}{m\+\_\+model\+Extractor}
+\item 
+std\+::array$<$ std\+::vector$<$ \hyperlink{class_model}{Model} $>$, 2 $>$ \hyperlink{class_scene_a10335e874947752239a933d35d926c3b}{m\+\_\+models}
+\item 
+std\+::array$<$ \hyperlink{class_lighting}{Lighting}, 1 $>$ \hyperlink{class_scene_adb68e0b4186fa78d472880f259e49671}{m\+\_\+lights}
+\item 
+std\+::array$<$ \hyperlink{class_material}{Material}, 2 $>$ \hyperlink{class_scene_af5fcdd7b94d1669008bd13d7ecde01c1}{m\+\_\+materials}
+\item 
+std\+::array$<$ \hyperlink{class_model_extractor}{Model\+Extractor} $\ast$, 2 $>$ \hyperlink{class_scene_a023c55afb84b247b9c51f6d33131102c}{m\+\_\+model\+Extractors}
+\item 
+\hyperlink{class_vector_maths}{Vector\+Maths} \hyperlink{class_scene_a64101e7e0ed72202c9898a5eddf28a7d}{m\+\_\+maths}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to render a scene. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{Scene()}{Scene()}}]{\setlength{\rightskip}{0pt plus 5cm}Scene\+::\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scene_ad10176d75a9cc0da56626f682d083507}{}\label{class_scene_ad10176d75a9cc0da56626f682d083507}
+
+
+\subsection{Member Function Documentation}
+\index{Scene@{Scene}!draw@{draw}}
+\index{draw@{draw}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{draw()}{draw()}}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scene_ac0e3d2c98ba6063a086467fb2c19142f}{}\label{class_scene_ac0e3d2c98ba6063a086467fb2c19142f}
+\index{Scene@{Scene}!process\+Event@{process\+Event}}
+\index{process\+Event@{process\+Event}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{process\+Event(sf\+::\+Event \&e, sf\+::\+Window \&window)}{processEvent(sf::Event &e, sf::Window &window)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+::process\+Event (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Event \&}]{e, }
+\item[{sf\+::\+Window \&}]{window}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scene_ab489a784acb0f14e1649f3970ea49195}{}\label{class_scene_ab489a784acb0f14e1649f3970ea49195}
+
+\begin{DoxyParams}{Parameters}
+{\em e} & = event. \\
+\hline
+{\em window} & = Our window. \\
+\hline
+\end{DoxyParams}
+\index{Scene@{Scene}!read\+Model\+Data@{read\+Model\+Data}}
+\index{read\+Model\+Data@{read\+Model\+Data}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{read\+Model\+Data(\+Model\+Extractor $\ast$reader, std\+::vector$<$ Model $>$ \&models)}{readModelData(ModelExtractor *reader, std::vector< Model > &models)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+::read\+Model\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf Model\+Extractor} $\ast$}]{reader, }
+\item[{std\+::vector$<$ {\bf Model} $>$ \&}]{models}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scene_ac6c60d8e20f167e468e4bf5dc17ca68e}{}\label{class_scene_ac6c60d8e20f167e468e4bf5dc17ca68e}
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & = Read the model data. \\
+\hline
+{\em models} & = Vector of models. \\
+\hline
+\end{DoxyParams}
+\index{Scene@{Scene}!set\+Screen\+Size@{set\+Screen\+Size}}
+\index{set\+Screen\+Size@{set\+Screen\+Size}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{set\+Screen\+Size(int i\+Screen\+Width, int i\+Screen\+Height)}{setScreenSize(int iScreenWidth, int iScreenHeight)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+::set\+Screen\+Size (
+\begin{DoxyParamCaption}
+\item[{int}]{i\+Screen\+Width, }
+\item[{int}]{i\+Screen\+Height}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scene_aaffb708da35121468f9a66c626881052}{}\label{class_scene_aaffb708da35121468f9a66c626881052}
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Screen\+Width} & = Screen width. \\
+\hline
+{\em i\+Screen\+Height} & = Screen height. \\
+\hline
+\end{DoxyParams}
+\index{Scene@{Scene}!update@{update}}
+\index{update@{update}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{update(float f\+Elapsed\+Time, sf\+::\+Vector2i i\+Mouse\+Position)}{update(float fElapsedTime, sf::Vector2i iMousePosition)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+::update (
+\begin{DoxyParamCaption}
+\item[{float}]{f\+Elapsed\+Time, }
+\item[{sf\+::\+Vector2i}]{i\+Mouse\+Position}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scene_a2984c9b32deff64e52a5c49744d90721}{}\label{class_scene_a2984c9b32deff64e52a5c49744d90721}
+Update the scene. 
+\begin{DoxyParams}{Parameters}
+{\em f\+Elapesed\+Time} & = Refresh rate. \\
+\hline
+{\em i\+Mouse\+Position} & = Position of a mouse. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Scene@{Scene}!i\+Screen\+Height@{i\+Screen\+Height}}
+\index{i\+Screen\+Height@{i\+Screen\+Height}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{i\+Screen\+Height}{iScreenHeight}}]{\setlength{\rightskip}{0pt plus 5cm}int Scene\+::i\+Screen\+Height\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_scene_aac44019cbb3024de33132b0f278708f9}{}\label{class_scene_aac44019cbb3024de33132b0f278708f9}
+Screen height. \index{Scene@{Scene}!i\+Screen\+Width@{i\+Screen\+Width}}
+\index{i\+Screen\+Width@{i\+Screen\+Width}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{i\+Screen\+Width}{iScreenWidth}}]{\setlength{\rightskip}{0pt plus 5cm}int Scene\+::i\+Screen\+Width\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_scene_a778137dcab836e6be4217615873db576}{}\label{class_scene_a778137dcab836e6be4217615873db576}
+Screen width. \index{Scene@{Scene}!m\+\_\+camera@{m\+\_\+camera}}
+\index{m\+\_\+camera@{m\+\_\+camera}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{m\+\_\+camera}{m_camera}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera} Scene\+::m\+\_\+camera\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_scene_a1b706ed302145fe191131cefe8873fec}{}\label{class_scene_a1b706ed302145fe191131cefe8873fec}
+Our camera. \index{Scene@{Scene}!m\+\_\+light@{m\+\_\+light}}
+\index{m\+\_\+light@{m\+\_\+light}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{m\+\_\+light}{m_light}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lighting} Scene\+::m\+\_\+light\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_scene_af2eaac7f7e7997e0b2a47373f55cb2e1}{}\label{class_scene_af2eaac7f7e7997e0b2a47373f55cb2e1}
+\index{Scene@{Scene}!m\+\_\+lights@{m\+\_\+lights}}
+\index{m\+\_\+lights@{m\+\_\+lights}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{m\+\_\+lights}{m_lights}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::array$<${\bf Lighting}, 1$>$ Scene\+::m\+\_\+lights\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_scene_adb68e0b4186fa78d472880f259e49671}{}\label{class_scene_adb68e0b4186fa78d472880f259e49671}
+\index{Scene@{Scene}!m\+\_\+material@{m\+\_\+material}}
+\index{m\+\_\+material@{m\+\_\+material}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{m\+\_\+material}{m_material}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Material} Scene\+::m\+\_\+material\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_scene_a80eed5a8d1800f3b426bca2eda26d4b6}{}\label{class_scene_a80eed5a8d1800f3b426bca2eda26d4b6}
+\index{Scene@{Scene}!m\+\_\+materials@{m\+\_\+materials}}
+\index{m\+\_\+materials@{m\+\_\+materials}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{m\+\_\+materials}{m_materials}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::array$<${\bf Material}, 2$>$ Scene\+::m\+\_\+materials\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_scene_af5fcdd7b94d1669008bd13d7ecde01c1}{}\label{class_scene_af5fcdd7b94d1669008bd13d7ecde01c1}
+\index{Scene@{Scene}!m\+\_\+maths@{m\+\_\+maths}}
+\index{m\+\_\+maths@{m\+\_\+maths}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{m\+\_\+maths}{m_maths}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector\+Maths} Scene\+::m\+\_\+maths\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_scene_a64101e7e0ed72202c9898a5eddf28a7d}{}\label{class_scene_a64101e7e0ed72202c9898a5eddf28a7d}
+\index{Scene@{Scene}!m\+\_\+model@{m\+\_\+model}}
+\index{m\+\_\+model@{m\+\_\+model}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{m\+\_\+model}{m_model}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Model} Scene\+::m\+\_\+model\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_scene_a8398e5ee10d0a39903a26d665f3f3a9f}{}\label{class_scene_a8398e5ee10d0a39903a26d665f3f3a9f}
+\index{Scene@{Scene}!m\+\_\+model\+Extractor@{m\+\_\+model\+Extractor}}
+\index{m\+\_\+model\+Extractor@{m\+\_\+model\+Extractor}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{m\+\_\+model\+Extractor}{m_modelExtractor}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Model\+Extractor} Scene\+::m\+\_\+model\+Extractor\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_scene_aadd2050cd69c19889b146c6334feb8dd}{}\label{class_scene_aadd2050cd69c19889b146c6334feb8dd}
+\index{Scene@{Scene}!m\+\_\+model\+Extractors@{m\+\_\+model\+Extractors}}
+\index{m\+\_\+model\+Extractors@{m\+\_\+model\+Extractors}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{m\+\_\+model\+Extractors}{m_modelExtractors}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::array$<${\bf Model\+Extractor}$\ast$, 2$>$ Scene\+::m\+\_\+model\+Extractors\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_scene_a023c55afb84b247b9c51f6d33131102c}{}\label{class_scene_a023c55afb84b247b9c51f6d33131102c}
+\index{Scene@{Scene}!m\+\_\+models@{m\+\_\+models}}
+\index{m\+\_\+models@{m\+\_\+models}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{m\+\_\+models}{m_models}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::array$<$std\+::vector$<${\bf Model}$>$, 2$>$ Scene\+::m\+\_\+models\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_scene_a10335e874947752239a933d35d926c3b}{}\label{class_scene_a10335e874947752239a933d35d926c3b}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Airport/include/\hyperlink{scene_8h}{scene.\+h}\end{DoxyCompactItemize}

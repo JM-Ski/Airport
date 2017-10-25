@@ -1,0 +1,10 @@
+<map id="Scene" name="Scene">
+<area shape="rect" id="node2" href="$class_lighting.html" title="This class is used to create a lighting. " alt="" coords="5,578,167,743"/>
+<area shape="rect" id="node3" href="$class_material.html" title="This class is used to create a material. " alt="" coords="191,585,325,736"/>
+<area shape="rect" id="node4" href="$class_model.html" title="This class is used to create a model. " alt="" coords="349,556,487,765"/>
+<area shape="rect" id="node5" href="$class_model_reader.html" title="This class is used to read models. " alt="" coords="63,5,314,420"/>
+<area shape="rect" id="node6" href="$class_texture_loader.html" title="This class is used to read models. " alt="" coords="339,145,481,281"/>
+<area shape="rect" id="node7" href="$class_camera.html" title="This class is used to create a camera. " alt="" coords="623,541,757,780"/>
+<area shape="rect" id="node8" href="$class_vector_maths.html" title="This class is used to peroform mathematic calculations. " alt="" coords="533,137,676,288"/>
+<area shape="rect" id="node9" href="$class_model_extractor.html" title="This class is used to extract information about the model from a file. " alt="" coords="781,483,1012,839"/>
+</map>

@@ -1,0 +1,31 @@
+# Model database :)
+# Please fill in all information needed so that program can register the model in the database such as:
+
+# r = Stands for refrence/ID, for example 1.
+# n = Stands for file name, for example simpleCube3.obj.
+# t = Stands for texture, for example UVLesson.bmp.
+# p = Stands for position, for example 0 0 0.
+# o = Stands for orientation, for example 0 0 0.
+# s = Stands for scale, for example 1 1 1.
+
+#-------------------------
+r 1
+n ground.obj
+t ground.bmp
+p 0 0 0
+o 0 0 0
+s 1 1 1
+#-------------------------
+r 2
+n line.obj
+t line.bmp
+p 0 0 0
+o 0 0 0
+s 1 1 1
+#-------------------------
+r 3
+n skybox.obj
+t skybox.bmp
+p 0 0 0
+o 0 0 0
+s 1 1 1

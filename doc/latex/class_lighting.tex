@@ -1,0 +1,140 @@
+\hypertarget{class_lighting}{}\section{Lighting Class Reference}
+\label{class_lighting}\index{Lighting@{Lighting}}
+
+
+This class is used to create a lighting.  
+
+
+
+
+{\ttfamily \#include $<$lighting.\+h$>$}
+
+
+
+Collaboration diagram for Lighting\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{class_lighting__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_lighting_a0077cde5c3f7a5a4e24617ce784b416f}{Lighting} ()
+\item 
+\hyperlink{class_lighting_a6f8057acf2f88c348490872d74273891}{Lighting} (sf\+::\+Vector3f position\+In, float f\+PositionW, sf\+::\+Vector3f diffuse, float f\+DiffuseW, sf\+::\+Vector3f specular, float f\+SpecularW, sf\+::\+Vector3f ambient, float f\+AmbientW)
+\item 
+void \hyperlink{class_lighting_a067ea4fccca5456f08867ae153f1f9a7}{set\+Active} (G\+Lenum i\+Light\+Number, std\+::string s\+Ambient\+Type)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G\+Lfloat \hyperlink{class_lighting_ac32a0644e1cf1fcbbcfd4cc9fd64dadc}{G\+Lf\+Light\+Position} \mbox{[}4\mbox{]}
+\item 
+G\+Lfloat \hyperlink{class_lighting_ae01c2bdb028d5fd91669809f274b9d8a}{G\+Lf\+Light\+Diffuse} \mbox{[}4\mbox{]}
+\item 
+G\+Lfloat \hyperlink{class_lighting_a931695dbe1f392f986a2a47434243f10}{G\+Lf\+Light\+Specular} \mbox{[}4\mbox{]}
+\item 
+G\+Lfloat \hyperlink{class_lighting_a4d0d2a9b0b16005ce211fc1a3e51f61c}{G\+Lf\+Light\+Ambient} \mbox{[}4\mbox{]}
+\item 
+G\+Lfloat \hyperlink{class_lighting_adaf2dbed9918074abc9aa6baa0cb2874}{G\+Lf\+Light\+Model\+Ambient} \mbox{[}4\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to create a lighting. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Lighting@{Lighting}!Lighting@{Lighting}}
+\index{Lighting@{Lighting}!Lighting@{Lighting}}
+\subsubsection[{\texorpdfstring{Lighting()}{Lighting()}}]{\setlength{\rightskip}{0pt plus 5cm}Lighting\+::\+Lighting (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_lighting_a0077cde5c3f7a5a4e24617ce784b416f}{}\label{class_lighting_a0077cde5c3f7a5a4e24617ce784b416f}
+Constructor. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{class_lighting_a0077cde5c3f7a5a4e24617ce784b416f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Lighting@{Lighting}!Lighting@{Lighting}}
+\index{Lighting@{Lighting}!Lighting@{Lighting}}
+\subsubsection[{\texorpdfstring{Lighting(sf\+::\+Vector3f position\+In, float f\+Position\+W, sf\+::\+Vector3f diffuse, float f\+Diffuse\+W, sf\+::\+Vector3f specular, float f\+Specular\+W, sf\+::\+Vector3f ambient, float f\+Ambient\+W)}{Lighting(sf::Vector3f positionIn, float fPositionW, sf::Vector3f diffuse, float fDiffuseW, sf::Vector3f specular, float fSpecularW, sf::Vector3f ambient, float fAmbientW)}}]{\setlength{\rightskip}{0pt plus 5cm}Lighting\+::\+Lighting (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Vector3f}]{position\+In, }
+\item[{float}]{f\+PositionW, }
+\item[{sf\+::\+Vector3f}]{diffuse, }
+\item[{float}]{f\+DiffuseW, }
+\item[{sf\+::\+Vector3f}]{specular, }
+\item[{float}]{f\+SpecularW, }
+\item[{sf\+::\+Vector3f}]{ambient, }
+\item[{float}]{f\+AmbientW}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lighting_a6f8057acf2f88c348490872d74273891}{}\label{class_lighting_a6f8057acf2f88c348490872d74273891}
+Light initializer. 
+\begin{DoxyParams}{Parameters}
+{\em position\+In} & = Position of the light. \\
+\hline
+{\em f\+PositionW} & = 1.\+f for directional, 0.\+f for spot light \\
+\hline
+{\em diffuse} & = Diffuse effect. \\
+\hline
+{\em f\+DiffuseW} & = Leave this at 1.\+f!!!. \\
+\hline
+{\em specular} & = Specular effect. \\
+\hline
+{\em f\+SpecularW} & = Leave this at 1.\+f!!!. \\
+\hline
+{\em ambient} & = Ambient effect. \\
+\hline
+{\em f\+AmbientW} & = Leave this at 1.\+f!!!. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Lighting@{Lighting}!set\+Active@{set\+Active}}
+\index{set\+Active@{set\+Active}!Lighting@{Lighting}}
+\subsubsection[{\texorpdfstring{set\+Active(\+G\+Lenum i\+Light\+Number, std\+::string s\+Ambient\+Type)}{setActive(GLenum iLightNumber, std::string sAmbientType)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lighting\+::set\+Active (
+\begin{DoxyParamCaption}
+\item[{G\+Lenum}]{i\+Light\+Number, }
+\item[{std\+::string}]{s\+Ambient\+Type}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lighting_a067ea4fccca5456f08867ae153f1f9a7}{}\label{class_lighting_a067ea4fccca5456f08867ae153f1f9a7}
+Activate the light source. 
+\begin{DoxyParams}{Parameters}
+{\em i\+Light\+Number} & = Light number. You can only have maximum of 8 light sources active. \\
+\hline
+{\em s\+Ambient\+Type} & = Type of an ambient light \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Lighting@{Lighting}!G\+Lf\+Light\+Ambient@{G\+Lf\+Light\+Ambient}}
+\index{G\+Lf\+Light\+Ambient@{G\+Lf\+Light\+Ambient}!Lighting@{Lighting}}
+\subsubsection[{\texorpdfstring{G\+Lf\+Light\+Ambient}{GLfLightAmbient}}]{\setlength{\rightskip}{0pt plus 5cm}G\+Lfloat Lighting\+::\+G\+Lf\+Light\+Ambient\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_lighting_a4d0d2a9b0b16005ce211fc1a3e51f61c}{}\label{class_lighting_a4d0d2a9b0b16005ce211fc1a3e51f61c}
+Ambient light. \index{Lighting@{Lighting}!G\+Lf\+Light\+Diffuse@{G\+Lf\+Light\+Diffuse}}
+\index{G\+Lf\+Light\+Diffuse@{G\+Lf\+Light\+Diffuse}!Lighting@{Lighting}}
+\subsubsection[{\texorpdfstring{G\+Lf\+Light\+Diffuse}{GLfLightDiffuse}}]{\setlength{\rightskip}{0pt plus 5cm}G\+Lfloat Lighting\+::\+G\+Lf\+Light\+Diffuse\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_lighting_ae01c2bdb028d5fd91669809f274b9d8a}{}\label{class_lighting_ae01c2bdb028d5fd91669809f274b9d8a}
+Diffuse light. \index{Lighting@{Lighting}!G\+Lf\+Light\+Model\+Ambient@{G\+Lf\+Light\+Model\+Ambient}}
+\index{G\+Lf\+Light\+Model\+Ambient@{G\+Lf\+Light\+Model\+Ambient}!Lighting@{Lighting}}
+\subsubsection[{\texorpdfstring{G\+Lf\+Light\+Model\+Ambient}{GLfLightModelAmbient}}]{\setlength{\rightskip}{0pt plus 5cm}G\+Lfloat Lighting\+::\+G\+Lf\+Light\+Model\+Ambient\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_lighting_adaf2dbed9918074abc9aa6baa0cb2874}{}\label{class_lighting_adaf2dbed9918074abc9aa6baa0cb2874}
+\hyperlink{class_model}{Model} ambient light. \index{Lighting@{Lighting}!G\+Lf\+Light\+Position@{G\+Lf\+Light\+Position}}
+\index{G\+Lf\+Light\+Position@{G\+Lf\+Light\+Position}!Lighting@{Lighting}}
+\subsubsection[{\texorpdfstring{G\+Lf\+Light\+Position}{GLfLightPosition}}]{\setlength{\rightskip}{0pt plus 5cm}G\+Lfloat Lighting\+::\+G\+Lf\+Light\+Position\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_lighting_ac32a0644e1cf1fcbbcfd4cc9fd64dadc}{}\label{class_lighting_ac32a0644e1cf1fcbbcfd4cc9fd64dadc}
+Light position. \index{Lighting@{Lighting}!G\+Lf\+Light\+Specular@{G\+Lf\+Light\+Specular}}
+\index{G\+Lf\+Light\+Specular@{G\+Lf\+Light\+Specular}!Lighting@{Lighting}}
+\subsubsection[{\texorpdfstring{G\+Lf\+Light\+Specular}{GLfLightSpecular}}]{\setlength{\rightskip}{0pt plus 5cm}G\+Lfloat Lighting\+::\+G\+Lf\+Light\+Specular\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_lighting_a931695dbe1f392f986a2a47434243f10}{}\label{class_lighting_a931695dbe1f392f986a2a47434243f10}
+Specular light. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Airport/include/\hyperlink{lighting_8h}{lighting.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,273 @@
+\hypertarget{class_model_reader}{}\section{Model\+Reader Class Reference}
+\label{class_model_reader}\index{Model\+Reader@{Model\+Reader}}
+
+
+This class is used to read models.  
+
+
+
+
+{\ttfamily \#include $<$model\+Reader.\+h$>$}
+
+
+
+Collaboration diagram for Model\+Reader\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{class_model_reader__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_model_reader_a9bcdfff98ff58c99dd089e4255a1e6a4}{Model\+Reader} (std\+::string s\+File\+Name)
+\item 
+\hyperlink{class_model_reader_a0ca7f69aa1af0ab52c43d83e8c0537de}{$\sim$\+Model\+Reader} ()
+\item 
+void \hyperlink{class_model_reader_a18575bb00920a495f718bdaea32d88d1}{Read\+Model\+Obj\+Data} (std\+::string s\+File\+Name)
+\item 
+void \hyperlink{class_model_reader_ab35aabd01b36f0f73849aa5d37269134}{Process\+Vertex\+Line} (std\+::istringstream \&iss)
+\item 
+void \hyperlink{class_model_reader_a4b70b7ce8745610b9c86cd30323827cf}{Process\+Vertex\+Normal\+Line} (std\+::istringstream \&iss)
+\item 
+void \hyperlink{class_model_reader_a937ab0dbfc1a7e45c200e8a0b520d677}{Process\+Vertex\+Texture\+Line} (std\+::istringstream \&iss)
+\item 
+void \hyperlink{class_model_reader_a4c89991dbe92b0adf34268e31ea249b4}{Process\+Face\+Line} (std\+::istringstream \&iss)
+\item 
+void \hyperlink{class_model_reader_ad488c2815537bdf59e67b5ea221c47f6}{Create\+Expanded\+Vertices} ()
+\item 
+void \hyperlink{class_model_reader_ada5347a6bc15931c74de786a6ccf51cc}{Create\+Expanded\+Normals} ()
+\item 
+void \hyperlink{class_model_reader_a08bf36b69771fea54a64c125af0dbf2f}{Create\+Expanded\+Texture\+Coordinates} ()
+\item 
+std\+::vector$<$ float $>$ \& \hyperlink{class_model_reader_acc0661952677fedcd92ac4d39eadc281}{Get\+Vertices} ()
+\item 
+std\+::vector$<$ float $>$ \& \hyperlink{class_model_reader_af72dcd34b82460711d6d1d56405ef532}{Get\+Normals} ()
+\item 
+std\+::vector$<$ float $>$ \& \hyperlink{class_model_reader_a041db1896d8ce51f653ba1590847de17}{Get\+Texture\+Coordinates} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{class_model_reader_a93d23aa8d615c4c59dd45112e09273fc}{base\+Directory}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{class_model_reader_a31bedc9d7bcfcb8385dab2538a9fe901}{m\+\_\+vertices}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{class_model_reader_adaf9095e7b9d76761142e1addcb7b203}{m\+\_\+vertex\+Normals}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{class_model_reader_a650f9b20143951a5baa47d35b6b069ce}{m\+\_\+vertex\+Texture\+Coordinates}
+\item 
+std\+::vector$<$ unsigned int $>$ \hyperlink{class_model_reader_a9c06d6c9bbadaebcb4c9e252c1ee91f9}{m\+\_\+face\+Vertex\+Indices}
+\item 
+std\+::vector$<$ unsigned int $>$ \hyperlink{class_model_reader_ae39f1d039babc141dd5762cce97849e7}{m\+\_\+face\+Texture\+Indices}
+\item 
+std\+::vector$<$ unsigned int $>$ \hyperlink{class_model_reader_a8063140b52f022f32ff26e5ef504f1e4}{m\+\_\+face\+Normal\+Indices}
+\item 
+std\+::string \hyperlink{class_model_reader_a5adca8aa3aeda91670b3d5d080165b2f}{m\+\_\+model\+Name}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{class_model_reader_a383b63a003d95c976c2abdf6acd96f90}{m\+\_\+vertex\+Triplets}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{class_model_reader_ac53d337835121e29acf367aee4e4d407}{m\+\_\+vertex\+Normal\+Triplets}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{class_model_reader_a1645f9266005e6ba037ff18fd95a14e2}{m\+\_\+vertex\+Texture\+Pairs}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{class_model_reader_a869fdfcdef0938fd7c06a0c35ee53488}{forward\+Slash} = 0x2F
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to read models. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Model\+Reader@{Model\+Reader}!Model\+Reader@{Model\+Reader}}
+\index{Model\+Reader@{Model\+Reader}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{Model\+Reader(std\+::string s\+File\+Name)}{ModelReader(std::string sFileName)}}]{\setlength{\rightskip}{0pt plus 5cm}Model\+Reader\+::\+Model\+Reader (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{s\+File\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_reader_a9bcdfff98ff58c99dd089e4255a1e6a4}{}\label{class_model_reader_a9bcdfff98ff58c99dd089e4255a1e6a4}
+
+\begin{DoxyParams}{Parameters}
+{\em s\+File\+Name} & = Name of a file. \\
+\hline
+\end{DoxyParams}
+\index{Model\+Reader@{Model\+Reader}!````~Model\+Reader@{$\sim$\+Model\+Reader}}
+\index{````~Model\+Reader@{$\sim$\+Model\+Reader}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{$\sim$\+Model\+Reader()}{~ModelReader()}}]{\setlength{\rightskip}{0pt plus 5cm}Model\+Reader\+::$\sim$\+Model\+Reader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_model_reader_a0ca7f69aa1af0ab52c43d83e8c0537de}{}\label{class_model_reader_a0ca7f69aa1af0ab52c43d83e8c0537de}
+Desctructor. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_reader_a0ca7f69aa1af0ab52c43d83e8c0537de_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Model\+Reader@{Model\+Reader}!Create\+Expanded\+Normals@{Create\+Expanded\+Normals}}
+\index{Create\+Expanded\+Normals@{Create\+Expanded\+Normals}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{Create\+Expanded\+Normals()}{CreateExpandedNormals()}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+Reader\+::\+Create\+Expanded\+Normals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_reader_ada5347a6bc15931c74de786a6ccf51cc}{}\label{class_model_reader_ada5347a6bc15931c74de786a6ccf51cc}
+Creates expanded normals for Open\+Gl to read. \index{Model\+Reader@{Model\+Reader}!Create\+Expanded\+Texture\+Coordinates@{Create\+Expanded\+Texture\+Coordinates}}
+\index{Create\+Expanded\+Texture\+Coordinates@{Create\+Expanded\+Texture\+Coordinates}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{Create\+Expanded\+Texture\+Coordinates()}{CreateExpandedTextureCoordinates()}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+Reader\+::\+Create\+Expanded\+Texture\+Coordinates (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_reader_a08bf36b69771fea54a64c125af0dbf2f}{}\label{class_model_reader_a08bf36b69771fea54a64c125af0dbf2f}
+Creates expanded texture coordinates for Open\+Gl to read. \index{Model\+Reader@{Model\+Reader}!Create\+Expanded\+Vertices@{Create\+Expanded\+Vertices}}
+\index{Create\+Expanded\+Vertices@{Create\+Expanded\+Vertices}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{Create\+Expanded\+Vertices()}{CreateExpandedVertices()}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+Reader\+::\+Create\+Expanded\+Vertices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_reader_ad488c2815537bdf59e67b5ea221c47f6}{}\label{class_model_reader_ad488c2815537bdf59e67b5ea221c47f6}
+Creates expanded vertices for Open\+Gl to read. \index{Model\+Reader@{Model\+Reader}!Get\+Normals@{Get\+Normals}}
+\index{Get\+Normals@{Get\+Normals}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{Get\+Normals()}{GetNormals()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$\& Model\+Reader\+::\+Get\+Normals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_reader_af72dcd34b82460711d6d1d56405ef532}{}\label{class_model_reader_af72dcd34b82460711d6d1d56405ef532}
+Read normals. \begin{DoxyReturn}{Returns}
+m\+\_\+vertex\+Triplets = Returns vector of normals. 
+\end{DoxyReturn}
+\index{Model\+Reader@{Model\+Reader}!Get\+Texture\+Coordinates@{Get\+Texture\+Coordinates}}
+\index{Get\+Texture\+Coordinates@{Get\+Texture\+Coordinates}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{Get\+Texture\+Coordinates()}{GetTextureCoordinates()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$\& Model\+Reader\+::\+Get\+Texture\+Coordinates (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_reader_a041db1896d8ce51f653ba1590847de17}{}\label{class_model_reader_a041db1896d8ce51f653ba1590847de17}
+Read texture coordinates. \begin{DoxyReturn}{Returns}
+m\+\_\+vertex\+Triplets = Returnes vector of texture coordinates. 
+\end{DoxyReturn}
+\index{Model\+Reader@{Model\+Reader}!Get\+Vertices@{Get\+Vertices}}
+\index{Get\+Vertices@{Get\+Vertices}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{Get\+Vertices()}{GetVertices()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$\& Model\+Reader\+::\+Get\+Vertices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_reader_acc0661952677fedcd92ac4d39eadc281}{}\label{class_model_reader_acc0661952677fedcd92ac4d39eadc281}
+Read vertices. \begin{DoxyReturn}{Returns}
+m\+\_\+vertex\+Triplets = Returns vector of vertices. 
+\end{DoxyReturn}
+\index{Model\+Reader@{Model\+Reader}!Process\+Face\+Line@{Process\+Face\+Line}}
+\index{Process\+Face\+Line@{Process\+Face\+Line}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{Process\+Face\+Line(std\+::istringstream \&iss)}{ProcessFaceLine(std::istringstream &iss)}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+Reader\+::\+Process\+Face\+Line (
+\begin{DoxyParamCaption}
+\item[{std\+::istringstream \&}]{iss}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_reader_a4c89991dbe92b0adf34268e31ea249b4}{}\label{class_model_reader_a4c89991dbe92b0adf34268e31ea249b4}
+Processes face when encounters F. 
+\begin{DoxyParams}{Parameters}
+{\em iss} & = Line input with a face. \\
+\hline
+\end{DoxyParams}
+\index{Model\+Reader@{Model\+Reader}!Process\+Vertex\+Line@{Process\+Vertex\+Line}}
+\index{Process\+Vertex\+Line@{Process\+Vertex\+Line}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{Process\+Vertex\+Line(std\+::istringstream \&iss)}{ProcessVertexLine(std::istringstream &iss)}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+Reader\+::\+Process\+Vertex\+Line (
+\begin{DoxyParamCaption}
+\item[{std\+::istringstream \&}]{iss}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_reader_ab35aabd01b36f0f73849aa5d37269134}{}\label{class_model_reader_ab35aabd01b36f0f73849aa5d37269134}
+Processes vertex when encounters V. 
+\begin{DoxyParams}{Parameters}
+{\em iss} & = Line input with vertex. \\
+\hline
+\end{DoxyParams}
+\index{Model\+Reader@{Model\+Reader}!Process\+Vertex\+Normal\+Line@{Process\+Vertex\+Normal\+Line}}
+\index{Process\+Vertex\+Normal\+Line@{Process\+Vertex\+Normal\+Line}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{Process\+Vertex\+Normal\+Line(std\+::istringstream \&iss)}{ProcessVertexNormalLine(std::istringstream &iss)}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+Reader\+::\+Process\+Vertex\+Normal\+Line (
+\begin{DoxyParamCaption}
+\item[{std\+::istringstream \&}]{iss}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_reader_a4b70b7ce8745610b9c86cd30323827cf}{}\label{class_model_reader_a4b70b7ce8745610b9c86cd30323827cf}
+Processes vertex when encounters VN. 
+\begin{DoxyParams}{Parameters}
+{\em iss} & = Line input with normal. \\
+\hline
+\end{DoxyParams}
+\index{Model\+Reader@{Model\+Reader}!Process\+Vertex\+Texture\+Line@{Process\+Vertex\+Texture\+Line}}
+\index{Process\+Vertex\+Texture\+Line@{Process\+Vertex\+Texture\+Line}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{Process\+Vertex\+Texture\+Line(std\+::istringstream \&iss)}{ProcessVertexTextureLine(std::istringstream &iss)}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+Reader\+::\+Process\+Vertex\+Texture\+Line (
+\begin{DoxyParamCaption}
+\item[{std\+::istringstream \&}]{iss}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_reader_a937ab0dbfc1a7e45c200e8a0b520d677}{}\label{class_model_reader_a937ab0dbfc1a7e45c200e8a0b520d677}
+Processes vertex when encounters VT. 
+\begin{DoxyParams}{Parameters}
+{\em iss} & = Line input with texture coordinates. \\
+\hline
+\end{DoxyParams}
+\index{Model\+Reader@{Model\+Reader}!Read\+Model\+Obj\+Data@{Read\+Model\+Obj\+Data}}
+\index{Read\+Model\+Obj\+Data@{Read\+Model\+Obj\+Data}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{Read\+Model\+Obj\+Data(std\+::string s\+File\+Name)}{ReadModelObjData(std::string sFileName)}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+Reader\+::\+Read\+Model\+Obj\+Data (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{s\+File\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_reader_a18575bb00920a495f718bdaea32d88d1}{}\label{class_model_reader_a18575bb00920a495f718bdaea32d88d1}
+Read the model. 
+\begin{DoxyParams}{Parameters}
+{\em s\+File\+Name} & = Name of a file. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Model\+Reader@{Model\+Reader}!base\+Directory@{base\+Directory}}
+\index{base\+Directory@{base\+Directory}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{base\+Directory}{baseDirectory}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Model\+Reader\+::base\+Directory\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_reader_a93d23aa8d615c4c59dd45112e09273fc}{}\label{class_model_reader_a93d23aa8d615c4c59dd45112e09273fc}
+Our base directory with models. \index{Model\+Reader@{Model\+Reader}!forward\+Slash@{forward\+Slash}}
+\index{forward\+Slash@{forward\+Slash}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{forward\+Slash}{forwardSlash}}]{\setlength{\rightskip}{0pt plus 5cm}const int Model\+Reader\+::forward\+Slash = 0x2F\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{class_model_reader_a869fdfcdef0938fd7c06a0c35ee53488}{}\label{class_model_reader_a869fdfcdef0938fd7c06a0c35ee53488}
+A\+S\+C\+II code for forward slash. \index{Model\+Reader@{Model\+Reader}!m\+\_\+face\+Normal\+Indices@{m\+\_\+face\+Normal\+Indices}}
+\index{m\+\_\+face\+Normal\+Indices@{m\+\_\+face\+Normal\+Indices}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{m\+\_\+face\+Normal\+Indices}{m_faceNormalIndices}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$unsigned int$>$ Model\+Reader\+::m\+\_\+face\+Normal\+Indices\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_reader_a8063140b52f022f32ff26e5ef504f1e4}{}\label{class_model_reader_a8063140b52f022f32ff26e5ef504f1e4}
+Face noraml indices = F // // X . \index{Model\+Reader@{Model\+Reader}!m\+\_\+face\+Texture\+Indices@{m\+\_\+face\+Texture\+Indices}}
+\index{m\+\_\+face\+Texture\+Indices@{m\+\_\+face\+Texture\+Indices}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{m\+\_\+face\+Texture\+Indices}{m_faceTextureIndices}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$unsigned int$>$ Model\+Reader\+::m\+\_\+face\+Texture\+Indices\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_reader_ae39f1d039babc141dd5762cce97849e7}{}\label{class_model_reader_ae39f1d039babc141dd5762cce97849e7}
+Face texture indices = F // X // . \index{Model\+Reader@{Model\+Reader}!m\+\_\+face\+Vertex\+Indices@{m\+\_\+face\+Vertex\+Indices}}
+\index{m\+\_\+face\+Vertex\+Indices@{m\+\_\+face\+Vertex\+Indices}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{m\+\_\+face\+Vertex\+Indices}{m_faceVertexIndices}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$unsigned int$>$ Model\+Reader\+::m\+\_\+face\+Vertex\+Indices\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_reader_a9c06d6c9bbadaebcb4c9e252c1ee91f9}{}\label{class_model_reader_a9c06d6c9bbadaebcb4c9e252c1ee91f9}
+Face vertex indices = F X // // . \index{Model\+Reader@{Model\+Reader}!m\+\_\+model\+Name@{m\+\_\+model\+Name}}
+\index{m\+\_\+model\+Name@{m\+\_\+model\+Name}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{m\+\_\+model\+Name}{m_modelName}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Model\+Reader\+::m\+\_\+model\+Name\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_reader_a5adca8aa3aeda91670b3d5d080165b2f}{}\label{class_model_reader_a5adca8aa3aeda91670b3d5d080165b2f}
+Name of a model. \index{Model\+Reader@{Model\+Reader}!m\+\_\+vertex\+Normals@{m\+\_\+vertex\+Normals}}
+\index{m\+\_\+vertex\+Normals@{m\+\_\+vertex\+Normals}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{m\+\_\+vertex\+Normals}{m_vertexNormals}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ Model\+Reader\+::m\+\_\+vertex\+Normals\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_reader_adaf9095e7b9d76761142e1addcb7b203}{}\label{class_model_reader_adaf9095e7b9d76761142e1addcb7b203}
+Vertex normals = VN. \index{Model\+Reader@{Model\+Reader}!m\+\_\+vertex\+Normal\+Triplets@{m\+\_\+vertex\+Normal\+Triplets}}
+\index{m\+\_\+vertex\+Normal\+Triplets@{m\+\_\+vertex\+Normal\+Triplets}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{m\+\_\+vertex\+Normal\+Triplets}{m_vertexNormalTriplets}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ Model\+Reader\+::m\+\_\+vertex\+Normal\+Triplets\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_reader_ac53d337835121e29acf367aee4e4d407}{}\label{class_model_reader_ac53d337835121e29acf367aee4e4d407}
+Necessary data of normals for O\+P\+E\+N\+GL in readable format. \index{Model\+Reader@{Model\+Reader}!m\+\_\+vertex\+Texture\+Coordinates@{m\+\_\+vertex\+Texture\+Coordinates}}
+\index{m\+\_\+vertex\+Texture\+Coordinates@{m\+\_\+vertex\+Texture\+Coordinates}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{m\+\_\+vertex\+Texture\+Coordinates}{m_vertexTextureCoordinates}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ Model\+Reader\+::m\+\_\+vertex\+Texture\+Coordinates\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_reader_a650f9b20143951a5baa47d35b6b069ce}{}\label{class_model_reader_a650f9b20143951a5baa47d35b6b069ce}
+Texture Coordinates = VT resctricted to UV. \index{Model\+Reader@{Model\+Reader}!m\+\_\+vertex\+Texture\+Pairs@{m\+\_\+vertex\+Texture\+Pairs}}
+\index{m\+\_\+vertex\+Texture\+Pairs@{m\+\_\+vertex\+Texture\+Pairs}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{m\+\_\+vertex\+Texture\+Pairs}{m_vertexTexturePairs}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ Model\+Reader\+::m\+\_\+vertex\+Texture\+Pairs\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_reader_a1645f9266005e6ba037ff18fd95a14e2}{}\label{class_model_reader_a1645f9266005e6ba037ff18fd95a14e2}
+Necessary data of texture coordinates for O\+P\+E\+N\+GL in readable format. \index{Model\+Reader@{Model\+Reader}!m\+\_\+vertex\+Triplets@{m\+\_\+vertex\+Triplets}}
+\index{m\+\_\+vertex\+Triplets@{m\+\_\+vertex\+Triplets}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{m\+\_\+vertex\+Triplets}{m_vertexTriplets}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ Model\+Reader\+::m\+\_\+vertex\+Triplets\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_reader_a383b63a003d95c976c2abdf6acd96f90}{}\label{class_model_reader_a383b63a003d95c976c2abdf6acd96f90}
+Necessary data of vertices for O\+P\+E\+N\+GL in readable format. \index{Model\+Reader@{Model\+Reader}!m\+\_\+vertices@{m\+\_\+vertices}}
+\index{m\+\_\+vertices@{m\+\_\+vertices}!Model\+Reader@{Model\+Reader}}
+\subsubsection[{\texorpdfstring{m\+\_\+vertices}{m_vertices}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ Model\+Reader\+::m\+\_\+vertices\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_reader_a31bedc9d7bcfcb8385dab2538a9fe901}{}\label{class_model_reader_a31bedc9d7bcfcb8385dab2538a9fe901}
+Vertices = V. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Airport/include/\hyperlink{model_reader_8h}{model\+Reader.\+h}\end{DoxyCompactItemize}

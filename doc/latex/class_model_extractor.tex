@@ -1,0 +1,324 @@
+\hypertarget{class_model_extractor}{}\section{Model\+Extractor Class Reference}
+\label{class_model_extractor}\index{Model\+Extractor@{Model\+Extractor}}
+
+
+This class is used to extract information about the model from a file.  
+
+
+
+
+{\ttfamily \#include $<$model\+Extractor.\+h$>$}
+
+
+
+Collaboration diagram for Model\+Extractor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{class_model_extractor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_model_extractor_a2347486e0a52e3458e9f3e65a120dec2}{Model\+Extractor} (std\+::string file\+Name)
+\item 
+\hyperlink{class_model_extractor_ab5ad796ee0213f2229bf2f5c6c8eb482}{$\sim$\+Model\+Extractor} ()
+\item 
+void \hyperlink{class_model_extractor_ab09dc19b136bd09661a4d7ff28fb03a7}{Read\+Database} (std\+::string s\+File\+Name)
+\item 
+void \hyperlink{class_model_extractor_a7eb2f5737963281bea5ed6ac5de072b0}{process\+Model\+Refrence\+Line} (std\+::istringstream \&iss)
+\item 
+void \hyperlink{class_model_extractor_af4c4726e7e474552958b4cb2b1f4142e}{process\+Model\+Name\+Line} (std\+::istringstream \&iss)
+\item 
+void \hyperlink{class_model_extractor_afe64d388bf8efc623af9570303b09ae0}{process\+Model\+Texture\+Line} (std\+::istringstream \&iss)
+\item 
+void \hyperlink{class_model_extractor_a75c1ea311dfa437712af661cb4943fb3}{process\+Model\+Position\+Line} (std\+::istringstream \&iss)
+\item 
+void \hyperlink{class_model_extractor_aa437809f62dc7a02b6fe843269d3b342}{process\+Model\+Orientation\+Line} (std\+::istringstream \&iss)
+\item 
+void \hyperlink{class_model_extractor_a7e66f0061b47a35d6708ee6b8092933c}{process\+Model\+Scale\+Line} (std\+::istringstream \&iss)
+\item 
+void \hyperlink{class_model_extractor_a0bdda45adf49226dec679b7e3c736478}{create\+Readable\+Position\+Numbers} ()
+\item 
+void \hyperlink{class_model_extractor_a5dec1fc4b5efefb78ceaec2d603b2081}{create\+Readable\+Orientation\+Numbers} ()
+\item 
+void \hyperlink{class_model_extractor_a55c88ca5985765592790a0b584426bd2}{create\+Readable\+Scale\+Numbers} ()
+\item 
+std\+::vector$<$ int $>$ \hyperlink{class_model_extractor_a705e7ffe3d8888c316f35431cb6c58a9}{get\+Refrence} ()
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_model_extractor_a1836d8eebb18bb6bcace2616e0aeb74f}{get\+Name} ()
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_model_extractor_ac925f4f4c80ec4739dcc2c306225519d}{get\+Texture} ()
+\item 
+std\+::vector$<$ sf\+::\+Vector3f $>$ \hyperlink{class_model_extractor_a9aef3acf4ca5d554649be296044b0c0d}{get\+Position} ()
+\item 
+std\+::vector$<$ sf\+::\+Vector3f $>$ \hyperlink{class_model_extractor_a2637fe0e4052ff38031a81dd2f00d1b9}{get\+Orientation} ()
+\item 
+std\+::vector$<$ sf\+::\+Vector3f $>$ \hyperlink{class_model_extractor_a5536264c569072b1cf854e092fd24f02}{get\+Scale} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{class_model_extractor_a97d4cac0fe91a0bb91a736f780c8740a}{base\+Directory}
+\item 
+std\+::vector$<$ int $>$ \hyperlink{class_model_extractor_a507d1a9066e1a5eca6ccabad7a678432}{model\+Refrence}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_model_extractor_a0167c9a9eab2cd5478f4399a55328db6}{model\+Name}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_model_extractor_ab1c441c2915f84360bc00b331b301eb2}{texture\+Name}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{class_model_extractor_a561a692a6b37b8ef36020b918a63066c}{position}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{class_model_extractor_ae0be066e55d4910fa79d7b3da45100d0}{orientation}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{class_model_extractor_ae9815e4d0f6783e6ba92961956c7d932}{scale}
+\item 
+std\+::vector$<$ sf\+::\+Vector3f $>$ \hyperlink{class_model_extractor_a9427f6c960e71ea44371014aa12835cf}{position\+Vectors}
+\item 
+std\+::vector$<$ sf\+::\+Vector3f $>$ \hyperlink{class_model_extractor_a619bae88ba670b8652dc608a482b23fc}{orientation\+Vectors}
+\item 
+std\+::vector$<$ sf\+::\+Vector3f $>$ \hyperlink{class_model_extractor_a03bcd2b8bcfffe704b07583ee597b65e}{scale\+Vectors}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to extract information about the model from a file. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Model\+Extractor@{Model\+Extractor}!Model\+Extractor@{Model\+Extractor}}
+\index{Model\+Extractor@{Model\+Extractor}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{Model\+Extractor(std\+::string file\+Name)}{ModelExtractor(std::string fileName)}}]{\setlength{\rightskip}{0pt plus 5cm}Model\+Extractor\+::\+Model\+Extractor (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{file\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_extractor_a2347486e0a52e3458e9f3e65a120dec2}{}\label{class_model_extractor_a2347486e0a52e3458e9f3e65a120dec2}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & = Name of a file. \\
+\hline
+\end{DoxyParams}
+\index{Model\+Extractor@{Model\+Extractor}!````~Model\+Extractor@{$\sim$\+Model\+Extractor}}
+\index{````~Model\+Extractor@{$\sim$\+Model\+Extractor}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{$\sim$\+Model\+Extractor()}{~ModelExtractor()}}]{\setlength{\rightskip}{0pt plus 5cm}Model\+Extractor\+::$\sim$\+Model\+Extractor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_model_extractor_ab5ad796ee0213f2229bf2f5c6c8eb482}{}\label{class_model_extractor_ab5ad796ee0213f2229bf2f5c6c8eb482}
+Desctructor. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_model_extractor_ab5ad796ee0213f2229bf2f5c6c8eb482_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Model\+Extractor@{Model\+Extractor}!create\+Readable\+Orientation\+Numbers@{create\+Readable\+Orientation\+Numbers}}
+\index{create\+Readable\+Orientation\+Numbers@{create\+Readable\+Orientation\+Numbers}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{create\+Readable\+Orientation\+Numbers()}{createReadableOrientationNumbers()}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+Extractor\+::create\+Readable\+Orientation\+Numbers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_extractor_a5dec1fc4b5efefb78ceaec2d603b2081}{}\label{class_model_extractor_a5dec1fc4b5efefb78ceaec2d603b2081}
+Creates expanded orientations for Open\+Gl to read. \index{Model\+Extractor@{Model\+Extractor}!create\+Readable\+Position\+Numbers@{create\+Readable\+Position\+Numbers}}
+\index{create\+Readable\+Position\+Numbers@{create\+Readable\+Position\+Numbers}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{create\+Readable\+Position\+Numbers()}{createReadablePositionNumbers()}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+Extractor\+::create\+Readable\+Position\+Numbers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_extractor_a0bdda45adf49226dec679b7e3c736478}{}\label{class_model_extractor_a0bdda45adf49226dec679b7e3c736478}
+Creates expanded positions for Open\+Gl to read. \index{Model\+Extractor@{Model\+Extractor}!create\+Readable\+Scale\+Numbers@{create\+Readable\+Scale\+Numbers}}
+\index{create\+Readable\+Scale\+Numbers@{create\+Readable\+Scale\+Numbers}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{create\+Readable\+Scale\+Numbers()}{createReadableScaleNumbers()}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+Extractor\+::create\+Readable\+Scale\+Numbers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_extractor_a55c88ca5985765592790a0b584426bd2}{}\label{class_model_extractor_a55c88ca5985765592790a0b584426bd2}
+Creates expanded scales for Open\+Gl to read. \index{Model\+Extractor@{Model\+Extractor}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{get\+Name()}{getName()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Model\+Extractor\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_extractor_a1836d8eebb18bb6bcace2616e0aeb74f}{}\label{class_model_extractor_a1836d8eebb18bb6bcace2616e0aeb74f}
+Get model name. \begin{DoxyReturn}{Returns}
+model\+Name = Returns vector of names. 
+\end{DoxyReturn}
+\index{Model\+Extractor@{Model\+Extractor}!get\+Orientation@{get\+Orientation}}
+\index{get\+Orientation@{get\+Orientation}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{get\+Orientation()}{getOrientation()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$sf\+::\+Vector3f$>$ Model\+Extractor\+::get\+Orientation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_extractor_a2637fe0e4052ff38031a81dd2f00d1b9}{}\label{class_model_extractor_a2637fe0e4052ff38031a81dd2f00d1b9}
+Get orientation. \begin{DoxyReturn}{Returns}
+orientation\+Vectors = Returns vector of orientations. 
+\end{DoxyReturn}
+\index{Model\+Extractor@{Model\+Extractor}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{get\+Position()}{getPosition()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$sf\+::\+Vector3f$>$ Model\+Extractor\+::get\+Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_extractor_a9aef3acf4ca5d554649be296044b0c0d}{}\label{class_model_extractor_a9aef3acf4ca5d554649be296044b0c0d}
+Get position. \begin{DoxyReturn}{Returns}
+position\+Vectors = Returns vector of positions. 
+\end{DoxyReturn}
+\index{Model\+Extractor@{Model\+Extractor}!get\+Refrence@{get\+Refrence}}
+\index{get\+Refrence@{get\+Refrence}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{get\+Refrence()}{getRefrence()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$int$>$ Model\+Extractor\+::get\+Refrence (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_extractor_a705e7ffe3d8888c316f35431cb6c58a9}{}\label{class_model_extractor_a705e7ffe3d8888c316f35431cb6c58a9}
+Get ID. \begin{DoxyReturn}{Returns}
+model\+Refrence = Returns vector of I\+Ds. 
+\end{DoxyReturn}
+\index{Model\+Extractor@{Model\+Extractor}!get\+Scale@{get\+Scale}}
+\index{get\+Scale@{get\+Scale}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{get\+Scale()}{getScale()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$sf\+::\+Vector3f$>$ Model\+Extractor\+::get\+Scale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_extractor_a5536264c569072b1cf854e092fd24f02}{}\label{class_model_extractor_a5536264c569072b1cf854e092fd24f02}
+Get scale. \begin{DoxyReturn}{Returns}
+scale\+Vectors = Returns vector of scales. 
+\end{DoxyReturn}
+\index{Model\+Extractor@{Model\+Extractor}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{get\+Texture()}{getTexture()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Model\+Extractor\+::get\+Texture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_extractor_ac925f4f4c80ec4739dcc2c306225519d}{}\label{class_model_extractor_ac925f4f4c80ec4739dcc2c306225519d}
+Get texture. \begin{DoxyReturn}{Returns}
+texture\+Name = Returns vector of textures. 
+\end{DoxyReturn}
+\index{Model\+Extractor@{Model\+Extractor}!process\+Model\+Name\+Line@{process\+Model\+Name\+Line}}
+\index{process\+Model\+Name\+Line@{process\+Model\+Name\+Line}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{process\+Model\+Name\+Line(std\+::istringstream \&iss)}{processModelNameLine(std::istringstream &iss)}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+Extractor\+::process\+Model\+Name\+Line (
+\begin{DoxyParamCaption}
+\item[{std\+::istringstream \&}]{iss}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_extractor_af4c4726e7e474552958b4cb2b1f4142e}{}\label{class_model_extractor_af4c4726e7e474552958b4cb2b1f4142e}
+Processes model name when encounters N. 
+\begin{DoxyParams}{Parameters}
+{\em iss} & = Line input with the name. \\
+\hline
+\end{DoxyParams}
+\index{Model\+Extractor@{Model\+Extractor}!process\+Model\+Orientation\+Line@{process\+Model\+Orientation\+Line}}
+\index{process\+Model\+Orientation\+Line@{process\+Model\+Orientation\+Line}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{process\+Model\+Orientation\+Line(std\+::istringstream \&iss)}{processModelOrientationLine(std::istringstream &iss)}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+Extractor\+::process\+Model\+Orientation\+Line (
+\begin{DoxyParamCaption}
+\item[{std\+::istringstream \&}]{iss}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_extractor_aa437809f62dc7a02b6fe843269d3b342}{}\label{class_model_extractor_aa437809f62dc7a02b6fe843269d3b342}
+Processes model orientation when encounters O. 
+\begin{DoxyParams}{Parameters}
+{\em iss} & = Line input with the orientation. \\
+\hline
+\end{DoxyParams}
+\index{Model\+Extractor@{Model\+Extractor}!process\+Model\+Position\+Line@{process\+Model\+Position\+Line}}
+\index{process\+Model\+Position\+Line@{process\+Model\+Position\+Line}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{process\+Model\+Position\+Line(std\+::istringstream \&iss)}{processModelPositionLine(std::istringstream &iss)}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+Extractor\+::process\+Model\+Position\+Line (
+\begin{DoxyParamCaption}
+\item[{std\+::istringstream \&}]{iss}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_extractor_a75c1ea311dfa437712af661cb4943fb3}{}\label{class_model_extractor_a75c1ea311dfa437712af661cb4943fb3}
+Processes model position when encounters P. 
+\begin{DoxyParams}{Parameters}
+{\em iss} & = Line input with the position. \\
+\hline
+\end{DoxyParams}
+\index{Model\+Extractor@{Model\+Extractor}!process\+Model\+Refrence\+Line@{process\+Model\+Refrence\+Line}}
+\index{process\+Model\+Refrence\+Line@{process\+Model\+Refrence\+Line}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{process\+Model\+Refrence\+Line(std\+::istringstream \&iss)}{processModelRefrenceLine(std::istringstream &iss)}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+Extractor\+::process\+Model\+Refrence\+Line (
+\begin{DoxyParamCaption}
+\item[{std\+::istringstream \&}]{iss}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_extractor_a7eb2f5737963281bea5ed6ac5de072b0}{}\label{class_model_extractor_a7eb2f5737963281bea5ed6ac5de072b0}
+Processes model ID when encounters R. 
+\begin{DoxyParams}{Parameters}
+{\em iss} & = Line input with ID. \\
+\hline
+\end{DoxyParams}
+\index{Model\+Extractor@{Model\+Extractor}!process\+Model\+Scale\+Line@{process\+Model\+Scale\+Line}}
+\index{process\+Model\+Scale\+Line@{process\+Model\+Scale\+Line}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{process\+Model\+Scale\+Line(std\+::istringstream \&iss)}{processModelScaleLine(std::istringstream &iss)}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+Extractor\+::process\+Model\+Scale\+Line (
+\begin{DoxyParamCaption}
+\item[{std\+::istringstream \&}]{iss}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_extractor_a7e66f0061b47a35d6708ee6b8092933c}{}\label{class_model_extractor_a7e66f0061b47a35d6708ee6b8092933c}
+Processes model scale when encounters S. 
+\begin{DoxyParams}{Parameters}
+{\em iss} & = Line input with the scale. \\
+\hline
+\end{DoxyParams}
+\index{Model\+Extractor@{Model\+Extractor}!process\+Model\+Texture\+Line@{process\+Model\+Texture\+Line}}
+\index{process\+Model\+Texture\+Line@{process\+Model\+Texture\+Line}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{process\+Model\+Texture\+Line(std\+::istringstream \&iss)}{processModelTextureLine(std::istringstream &iss)}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+Extractor\+::process\+Model\+Texture\+Line (
+\begin{DoxyParamCaption}
+\item[{std\+::istringstream \&}]{iss}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_extractor_afe64d388bf8efc623af9570303b09ae0}{}\label{class_model_extractor_afe64d388bf8efc623af9570303b09ae0}
+Processes model texture when encounters T. 
+\begin{DoxyParams}{Parameters}
+{\em iss} & = Line input with the texture. \\
+\hline
+\end{DoxyParams}
+\index{Model\+Extractor@{Model\+Extractor}!Read\+Database@{Read\+Database}}
+\index{Read\+Database@{Read\+Database}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{Read\+Database(std\+::string s\+File\+Name)}{ReadDatabase(std::string sFileName)}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+Extractor\+::\+Read\+Database (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{s\+File\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_extractor_ab09dc19b136bd09661a4d7ff28fb03a7}{}\label{class_model_extractor_ab09dc19b136bd09661a4d7ff28fb03a7}
+Read a text file 
+\begin{DoxyParams}{Parameters}
+{\em s\+File\+Name} & = Name of a file. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Model\+Extractor@{Model\+Extractor}!base\+Directory@{base\+Directory}}
+\index{base\+Directory@{base\+Directory}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{base\+Directory}{baseDirectory}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Model\+Extractor\+::base\+Directory\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_extractor_a97d4cac0fe91a0bb91a736f780c8740a}{}\label{class_model_extractor_a97d4cac0fe91a0bb91a736f780c8740a}
+Our base directory with text files. \index{Model\+Extractor@{Model\+Extractor}!model\+Name@{model\+Name}}
+\index{model\+Name@{model\+Name}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{model\+Name}{modelName}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Model\+Extractor\+::model\+Name\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_extractor_a0167c9a9eab2cd5478f4399a55328db6}{}\label{class_model_extractor_a0167c9a9eab2cd5478f4399a55328db6}
+\hyperlink{class_model}{Model} name. \index{Model\+Extractor@{Model\+Extractor}!model\+Refrence@{model\+Refrence}}
+\index{model\+Refrence@{model\+Refrence}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{model\+Refrence}{modelRefrence}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$int$>$ Model\+Extractor\+::model\+Refrence\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_extractor_a507d1a9066e1a5eca6ccabad7a678432}{}\label{class_model_extractor_a507d1a9066e1a5eca6ccabad7a678432}
+\hyperlink{class_model}{Model} ID. \index{Model\+Extractor@{Model\+Extractor}!orientation@{orientation}}
+\index{orientation@{orientation}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{orientation}{orientation}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ Model\+Extractor\+::orientation\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_extractor_ae0be066e55d4910fa79d7b3da45100d0}{}\label{class_model_extractor_ae0be066e55d4910fa79d7b3da45100d0}
+Orientation of the model. \index{Model\+Extractor@{Model\+Extractor}!orientation\+Vectors@{orientation\+Vectors}}
+\index{orientation\+Vectors@{orientation\+Vectors}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{orientation\+Vectors}{orientationVectors}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$sf\+::\+Vector3f$>$ Model\+Extractor\+::orientation\+Vectors\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_extractor_a619bae88ba670b8652dc608a482b23fc}{}\label{class_model_extractor_a619bae88ba670b8652dc608a482b23fc}
+Vector with orientations. \index{Model\+Extractor@{Model\+Extractor}!position@{position}}
+\index{position@{position}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{position}{position}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ Model\+Extractor\+::position\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_extractor_a561a692a6b37b8ef36020b918a63066c}{}\label{class_model_extractor_a561a692a6b37b8ef36020b918a63066c}
+Position of the model. \index{Model\+Extractor@{Model\+Extractor}!position\+Vectors@{position\+Vectors}}
+\index{position\+Vectors@{position\+Vectors}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{position\+Vectors}{positionVectors}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$sf\+::\+Vector3f$>$ Model\+Extractor\+::position\+Vectors\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_extractor_a9427f6c960e71ea44371014aa12835cf}{}\label{class_model_extractor_a9427f6c960e71ea44371014aa12835cf}
+Vector with positions. \index{Model\+Extractor@{Model\+Extractor}!scale@{scale}}
+\index{scale@{scale}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{scale}{scale}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ Model\+Extractor\+::scale\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_extractor_ae9815e4d0f6783e6ba92961956c7d932}{}\label{class_model_extractor_ae9815e4d0f6783e6ba92961956c7d932}
+Scale of the model. \index{Model\+Extractor@{Model\+Extractor}!scale\+Vectors@{scale\+Vectors}}
+\index{scale\+Vectors@{scale\+Vectors}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{scale\+Vectors}{scaleVectors}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$sf\+::\+Vector3f$>$ Model\+Extractor\+::scale\+Vectors\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_extractor_a03bcd2b8bcfffe704b07583ee597b65e}{}\label{class_model_extractor_a03bcd2b8bcfffe704b07583ee597b65e}
+Vector with scales. \index{Model\+Extractor@{Model\+Extractor}!texture\+Name@{texture\+Name}}
+\index{texture\+Name@{texture\+Name}!Model\+Extractor@{Model\+Extractor}}
+\subsubsection[{\texorpdfstring{texture\+Name}{textureName}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Model\+Extractor\+::texture\+Name\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_extractor_ab1c441c2915f84360bc00b331b301eb2}{}\label{class_model_extractor_ab1c441c2915f84360bc00b331b301eb2}
+\hyperlink{class_model}{Model} texture name. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Airport/include/\hyperlink{model_extractor_8h}{model\+Extractor.\+h}\end{DoxyCompactItemize}

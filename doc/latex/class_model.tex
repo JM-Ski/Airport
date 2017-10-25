@@ -1,0 +1,158 @@
+\hypertarget{class_model}{}\section{Model Class Reference}
+\label{class_model}\index{Model@{Model}}
+
+
+This class is used to create a model.  
+
+
+
+
+{\ttfamily \#include $<$model.\+h$>$}
+
+
+
+Collaboration diagram for Model\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_model_ae3b375de5f6df4faf74a95d64748e048}{Model} ()
+\item 
+\hyperlink{class_model_ad6ebd2062a0b823db841a0b88baac4c0}{$\sim$\+Model} ()
+\item 
+\hyperlink{class_model_a76f8ab6b607136cf845617d0c02d4ce9}{Model} (std\+::string s\+File\+Name, std\+::string s\+Texture\+Name, sf\+::\+Vector3f position\+IN, sf\+::\+Vector3f orientation\+IN, sf\+::\+Vector3f scale\+IN)
+\item 
+void \hyperlink{class_model_a4be6c139cfb3b8bc2903cd536f3b16fb}{render} (bool draw\+With\+Normals, bool draw\+With\+Texture)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Vector3f \hyperlink{class_model_a2f25a152b6212faf7d23e6d6ab103d61}{position}
+\item 
+sf\+::\+Vector3f \hyperlink{class_model_a94eb6111227ec3db203681abd21ebeca}{orientation}
+\item 
+sf\+::\+Vector3f \hyperlink{class_model_aac1cda61a954d28aa2ee94a1b23de4a9}{scale}
+\item 
+G\+Luint \hyperlink{class_model_ac0b7f3944641754dba82add1bc4604fc}{m\+\_\+xi\+Rotation\+Angle}
+\item 
+G\+Luint \hyperlink{class_model_aacf906903bfaa80cb02c46a299016f5e}{m\+\_\+yi\+Rotation\+Angle}
+\item 
+G\+Luint \hyperlink{class_model_a70be5d2acec40543ec2b9186dfc7cb43}{m\+\_\+zi\+Rotation\+Angle}
+\item 
+G\+Luint \hyperlink{class_model_a23d182da28544aa34e44752eabaa0422}{m\+\_\+texture\+ID} \mbox{[}2\mbox{]}
+\item 
+\hyperlink{class_model_reader}{Model\+Reader} $\ast$ \hyperlink{class_model_a3247a4733aa6155e6ed8649cca51d658}{m\+\_\+model\+Reader}
+\item 
+\hyperlink{class_texture_loader}{Texture\+Loader} $\ast$ \hyperlink{class_model_aade88da2d54d5fa74bd941a1b6f92cc3}{m\+\_\+texture\+Loader}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to create a model. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\subsubsection[{\texorpdfstring{Model()}{Model()}}]{\setlength{\rightskip}{0pt plus 5cm}Model\+::\+Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_model_ae3b375de5f6df4faf74a95d64748e048}{}\label{class_model_ae3b375de5f6df4faf74a95d64748e048}
+Constructor. \index{Model@{Model}!````~Model@{$\sim$\+Model}}
+\index{````~Model@{$\sim$\+Model}!Model@{Model}}
+\subsubsection[{\texorpdfstring{$\sim$\+Model()}{~Model()}}]{\setlength{\rightskip}{0pt plus 5cm}Model\+::$\sim$\+Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_model_ad6ebd2062a0b823db841a0b88baac4c0}{}\label{class_model_ad6ebd2062a0b823db841a0b88baac4c0}
+Destructor. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{class_model_ad6ebd2062a0b823db841a0b88baac4c0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\subsubsection[{\texorpdfstring{Model(std\+::string s\+File\+Name, std\+::string s\+Texture\+Name, sf\+::\+Vector3f position\+I\+N, sf\+::\+Vector3f orientation\+I\+N, sf\+::\+Vector3f scale\+I\+N)}{Model(std::string sFileName, std::string sTextureName, sf::Vector3f positionIN, sf::Vector3f orientationIN, sf::Vector3f scaleIN)}}]{\setlength{\rightskip}{0pt plus 5cm}Model\+::\+Model (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{s\+File\+Name, }
+\item[{std\+::string}]{s\+Texture\+Name, }
+\item[{sf\+::\+Vector3f}]{position\+IN, }
+\item[{sf\+::\+Vector3f}]{orientation\+IN, }
+\item[{sf\+::\+Vector3f}]{scale\+IN}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_a76f8ab6b607136cf845617d0c02d4ce9}{}\label{class_model_a76f8ab6b607136cf845617d0c02d4ce9}
+\hyperlink{class_model}{Model} constructor. 
+\begin{DoxyParams}{Parameters}
+{\em s\+File\+Name} & = Name of a file. \\
+\hline
+{\em s\+Texture\+Name} & = Texture name. \\
+\hline
+{\em postion\+IN} & = Position of a model. \\
+\hline
+{\em orientation\+IN} & = Orientation of a model. \\
+\hline
+{\em scale\+IN} & = Scale of a model. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Model@{Model}!render@{render}}
+\index{render@{render}!Model@{Model}}
+\subsubsection[{\texorpdfstring{render(bool draw\+With\+Normals, bool draw\+With\+Texture)}{render(bool drawWithNormals, bool drawWithTexture)}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+::render (
+\begin{DoxyParamCaption}
+\item[{bool}]{draw\+With\+Normals, }
+\item[{bool}]{draw\+With\+Texture}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_a4be6c139cfb3b8bc2903cd536f3b16fb}{}\label{class_model_a4be6c139cfb3b8bc2903cd536f3b16fb}
+\hyperlink{class_model}{Model} rendering. 
+\begin{DoxyParams}{Parameters}
+{\em draw\+With\+Normals} & = Whether or not to draw with normals. param draw\+With\+Texture = Whether or not to draw with textures. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Model@{Model}!m\+\_\+model\+Reader@{m\+\_\+model\+Reader}}
+\index{m\+\_\+model\+Reader@{m\+\_\+model\+Reader}!Model@{Model}}
+\subsubsection[{\texorpdfstring{m\+\_\+model\+Reader}{m_modelReader}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Model\+Reader}$\ast$ Model\+::m\+\_\+model\+Reader\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_a3247a4733aa6155e6ed8649cca51d658}{}\label{class_model_a3247a4733aa6155e6ed8649cca51d658}
+\hyperlink{class_model}{Model} reader. \index{Model@{Model}!m\+\_\+texture\+ID@{m\+\_\+texture\+ID}}
+\index{m\+\_\+texture\+ID@{m\+\_\+texture\+ID}!Model@{Model}}
+\subsubsection[{\texorpdfstring{m\+\_\+texture\+ID}{m_textureID}}]{\setlength{\rightskip}{0pt plus 5cm}G\+Luint Model\+::m\+\_\+texture\+ID\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_a23d182da28544aa34e44752eabaa0422}{}\label{class_model_a23d182da28544aa34e44752eabaa0422}
+A buffer of texture. \index{Model@{Model}!m\+\_\+texture\+Loader@{m\+\_\+texture\+Loader}}
+\index{m\+\_\+texture\+Loader@{m\+\_\+texture\+Loader}!Model@{Model}}
+\subsubsection[{\texorpdfstring{m\+\_\+texture\+Loader}{m_textureLoader}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture\+Loader}$\ast$ Model\+::m\+\_\+texture\+Loader\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_aade88da2d54d5fa74bd941a1b6f92cc3}{}\label{class_model_aade88da2d54d5fa74bd941a1b6f92cc3}
+Texture loader. \index{Model@{Model}!m\+\_\+xi\+Rotation\+Angle@{m\+\_\+xi\+Rotation\+Angle}}
+\index{m\+\_\+xi\+Rotation\+Angle@{m\+\_\+xi\+Rotation\+Angle}!Model@{Model}}
+\subsubsection[{\texorpdfstring{m\+\_\+xi\+Rotation\+Angle}{m_xiRotationAngle}}]{\setlength{\rightskip}{0pt plus 5cm}G\+Luint Model\+::m\+\_\+xi\+Rotation\+Angle\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_ac0b7f3944641754dba82add1bc4604fc}{}\label{class_model_ac0b7f3944641754dba82add1bc4604fc}
+Rotation in X axis. \index{Model@{Model}!m\+\_\+yi\+Rotation\+Angle@{m\+\_\+yi\+Rotation\+Angle}}
+\index{m\+\_\+yi\+Rotation\+Angle@{m\+\_\+yi\+Rotation\+Angle}!Model@{Model}}
+\subsubsection[{\texorpdfstring{m\+\_\+yi\+Rotation\+Angle}{m_yiRotationAngle}}]{\setlength{\rightskip}{0pt plus 5cm}G\+Luint Model\+::m\+\_\+yi\+Rotation\+Angle\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_aacf906903bfaa80cb02c46a299016f5e}{}\label{class_model_aacf906903bfaa80cb02c46a299016f5e}
+Rotation in Y axis. \index{Model@{Model}!m\+\_\+zi\+Rotation\+Angle@{m\+\_\+zi\+Rotation\+Angle}}
+\index{m\+\_\+zi\+Rotation\+Angle@{m\+\_\+zi\+Rotation\+Angle}!Model@{Model}}
+\subsubsection[{\texorpdfstring{m\+\_\+zi\+Rotation\+Angle}{m_ziRotationAngle}}]{\setlength{\rightskip}{0pt plus 5cm}G\+Luint Model\+::m\+\_\+zi\+Rotation\+Angle\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_a70be5d2acec40543ec2b9186dfc7cb43}{}\label{class_model_a70be5d2acec40543ec2b9186dfc7cb43}
+Rotation in Z axis. \index{Model@{Model}!orientation@{orientation}}
+\index{orientation@{orientation}!Model@{Model}}
+\subsubsection[{\texorpdfstring{orientation}{orientation}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector3f Model\+::orientation\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_a94eb6111227ec3db203681abd21ebeca}{}\label{class_model_a94eb6111227ec3db203681abd21ebeca}
+Orientation of the model. \index{Model@{Model}!position@{position}}
+\index{position@{position}!Model@{Model}}
+\subsubsection[{\texorpdfstring{position}{position}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector3f Model\+::position\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_a2f25a152b6212faf7d23e6d6ab103d61}{}\label{class_model_a2f25a152b6212faf7d23e6d6ab103d61}
+Position of the model. \index{Model@{Model}!scale@{scale}}
+\index{scale@{scale}!Model@{Model}}
+\subsubsection[{\texorpdfstring{scale}{scale}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector3f Model\+::scale\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_aac1cda61a954d28aa2ee94a1b23de4a9}{}\label{class_model_aac1cda61a954d28aa2ee94a1b23de4a9}
+Scale of the model. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Airport/include/\hyperlink{model_8h}{model.\+h}\end{DoxyCompactItemize}

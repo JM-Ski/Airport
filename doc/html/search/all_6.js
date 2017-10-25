@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['getname',['getName',['../class_model_extractor.html#a1836d8eebb18bb6bcace2616e0aeb74f',1,'ModelExtractor']]],
+  ['getnormals',['GetNormals',['../class_model_reader.html#af72dcd34b82460711d6d1d56405ef532',1,'ModelReader']]],
+  ['getorientation',['getOrientation',['../class_model_extractor.html#a2637fe0e4052ff38031a81dd2f00d1b9',1,'ModelExtractor']]],
+  ['getposition',['getPosition',['../class_model_extractor.html#a9aef3acf4ca5d554649be296044b0c0d',1,'ModelExtractor']]],
+  ['getrefrence',['getRefrence',['../class_model_extractor.html#a705e7ffe3d8888c316f35431cb6c58a9',1,'ModelExtractor']]],
+  ['getscale',['getScale',['../class_model_extractor.html#a5536264c569072b1cf854e092fd24f02',1,'ModelExtractor']]],
+  ['gettexture',['getTexture',['../class_model_extractor.html#ac925f4f4c80ec4739dcc2c306225519d',1,'ModelExtractor']]],
+  ['gettexturecoordinates',['GetTextureCoordinates',['../class_model_reader.html#a041db1896d8ce51f653ba1590847de17',1,'ModelReader']]],
+  ['getvertices',['GetVertices',['../class_model_reader.html#acc0661952677fedcd92ac4d39eadc281',1,'ModelReader']]],
+  ['gl_5fglext_5fprototypes',['GL_GLEXT_PROTOTYPES',['../headers_8h.html#a120fb070bddb21f0bd899f50252c4cb5',1,'headers.h']]],
+  ['glew_5fstatic',['GLEW_STATIC',['../headers_8h.html#abcde84ea0ef5f934384e4620f092c85a',1,'headers.h']]],
+  ['glflightambient',['GLfLightAmbient',['../class_lighting.html#a4d0d2a9b0b16005ce211fc1a3e51f61c',1,'Lighting']]],
+  ['glflightdiffuse',['GLfLightDiffuse',['../class_lighting.html#ae01c2bdb028d5fd91669809f274b9d8a',1,'Lighting']]],
+  ['glflightmodelambient',['GLfLightModelAmbient',['../class_lighting.html#adaf2dbed9918074abc9aa6baa0cb2874',1,'Lighting']]],
+  ['glflightposition',['GLfLightPosition',['../class_lighting.html#ac32a0644e1cf1fcbbcfd4cc9fd64dadc',1,'Lighting']]],
+  ['glflightspecular',['GLfLightSpecular',['../class_lighting.html#a931695dbe1f392f986a2a47434243f10',1,'Lighting']]]
+];

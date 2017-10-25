@@ -1,0 +1,80 @@
+# Model database :)
+# Please fill in all information needed so that program can register the model in the database such as:
+
+# r = Stands for refrence/ID, for example 1.
+# n = Stands for file name, for example simpleCube3.obj.
+# t = Stands for texture, for example UVLesson.bmp.
+# p = Stands for position, for example 0 0 0.
+# o = Stands for orientation, for example 0 0 0.
+# s = Stands for scale, for example 1 1 1.
+
+#-------------------------
+r 1
+n tower.obj
+t tower.bmp
+p 0 0 0
+o 0 0 0
+s 1 1 1
+#-------------------------
+r 2
+n planeMain.obj
+t planeMain.bmp
+p 0 0 0
+o 0 0 0
+s 1 1 1
+#-------------------------
+r 3
+n planeMain02.obj
+t planeMain02.bmp
+p 0 0 0
+o 0 0 0
+s 1 1 1
+#-------------------------
+r 4
+n planeInterior.obj
+t planeInterior.bmp
+p 0 0 0
+o 0 0 0
+s 1 1 1
+#-------------------------
+r 5
+n planeGlass.obj
+t planeGlass.bmp
+p 0 0 0
+o 0 0 0
+s 1 1 1
+#-------------------------
+r 6
+n carBody.obj
+t carBody.bmp
+p 0 0 0
+o 0 0 0
+s 1 1 1
+#-------------------------
+r 7
+n carWheels.obj
+t carWheels.bmp
+p 0 0 0
+o 0 0 0
+s 1 1 1
+#-------------------------
+r 8
+n carInterior.obj
+t carInterior.bmp
+p 0 0 0
+o 0 0 0
+s 1 1 1
+#-------------------------
+r 9
+n planeOtherMain.obj
+t planeOtherMain.bmp
+p 0 0 0
+o 0 0 0
+s 1 1 1
+#-------------------------
+r 10
+n buildings.obj
+t building.bmp
+p 0 0 0
+o 0 0 0
+s 1 1 1
